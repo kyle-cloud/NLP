@@ -1,6 +1,8 @@
 # NLP
 Have some NLP-related practice and projects.
 
+[toc]
+
 ### 文档目标
 这个仓库的目的是为了将我接下来学习 nlp 的路线做一下记录，包括测试代码、练手项目还有自己的学习笔记。
 
