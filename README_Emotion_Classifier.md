@@ -4,6 +4,11 @@
   - [1 torchtext](#1-torchtext)
     - [1.1 torchtext](#11-torchtext)
     - [1.2 torchtext.data](#12-torchtextdata)
+    - [1.3 torchtext.datasets](#13-torchtextdatasets)
+    - [1.4 torchtext.vocab](#14-torchtextvocab)
+    - [1.5 torchtext.utils](#15-torchtextutils)
+    - [1.6 Example](#16-example)
+    - [1.7 本项目使用](#17-本项目使用)
 
 ## 第一部分：任务概述
     识别微博文本中蕴含的情绪，并分类到一下六种之一：积极、愤怒、悲伤、恐惧、惊奇和无情绪
@@ -28,6 +33,7 @@
     在这里记录一下根据官方文档学习相关工具的过程
 
 ### 1 torchtext
+    官方文档：https://torchtext.readthedocs.io/en/latest/index.html
 
 #### 1.1 torchtext
     包括数据处理工具和流行的数据集
@@ -55,7 +61,32 @@
 
     Functions
     1. batch:不断地yield一个batch_size大小的数据块
-    2. pool:
+    2. pool:每100*batch_size为一组并组内排序，然后再batch和shuffle
+
+#### 1.3 torchtext.datasets
+
+    数据集就不在这里详细介绍了
+
+#### 1.4 torchtext.vocab
+    1. Vocab:定义一个词汇表对象
+    2. SubwordVocab:对Subword(基本单元介于字符和单元之间的模型，可以更好地处理未知和罕见的词汇)，创建的词汇表
+    3. Vectors:词向量
+    4. GloVe:Global Vectors, 向量化表示的模型
+    5. FastText:一种快速文本分类算法
+    6. CharNGram:统计不同字符出现次数的计数矩阵
+    7. pretrained_aliases:预训练化名，使用dict预定义
+
+#### 1.5 torchtext.utils
+    1. reporthoot:进度条显示
+    2. download_from_url:下载文件
+
+#### 1.6 Example
+    一些常见的实际操作
+
+#### 1.7 本项目使用
+    `print("?")`
+
+
 
 
 
