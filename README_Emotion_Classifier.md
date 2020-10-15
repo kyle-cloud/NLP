@@ -9,6 +9,9 @@
     - [1.5 torchtext.utils](#15-torchtextutils)
     - [1.6 Example](#16-example)
     - [1.7 本项目使用](#17-本项目使用)
+  - [2 gensim - Word2vec](#2-gensim---word2vec)
+  - [3 Bi-LSTM](#3-bi-lstm)
+  - [4 项目流程](#4-项目流程)
 
 ## 第一部分：任务概述
     识别微博文本中蕴含的情绪，并分类到一下六种之一：积极、愤怒、悲伤、恐惧、惊奇和无情绪
@@ -84,12 +87,22 @@
     一些常见的实际操作
 
 #### 1.7 本项目使用
-`print("?")`
+    torchtext读取JSON需要每一条都换行
 
+### 2 gensim - Word2vec
+    主要学习gensim中的Word2Vec模型，用于生成词向量，是传统Bag-of-words的重要改进
+    
+    在README.md中的‘第四部分：词向量’中已经简单地进行了介绍，其中的模型训练和增量训练已经满足了我们的使用要求，这里我就不再赘述了
+    
+    官方文档：https://radimrehurek.com/gensim/auto_examples/tutorials/run_word2vec.html#sphx-glr-auto-examples-tutorials-run-word2vec-py    
 
+### 3 Bi-LSTM
+    双向长短期记忆网络，不赘述了
 
+### 4 项目流程
+    在这里记录进度及思路
 
-
+###3 4.1 
 
 
 
